@@ -1,0 +1,84 @@
+/* CSS Variables */
+:root {
+    --color-primary: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 20%);
+    --color-dark-grey: hsl(0, 0%, 12%);
+    --color-off-black: hsl(0, 0%, 8%);
+}
+
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CSS Reset Ends */
+
+body {
+    font-family: Inter, serif;
+    text-align: center;
+    color: var(--color-white);
+    font-size: 16px;
+}
+
+
+/* CSS Reset Ends */
+
+.container {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-off-black);
+}
+
+.card {
+    max-width: 400px;
+    border-radius: 15px;
+    background-color: var(--color-dark-grey);
+    padding: 20px;
+}
+
+.card__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.card__meta * {
+    margin-block: 10px;
+    font-size: 12px;
+}
+
+.card__meta p:first-of-type {
+    font-size: 11px;
+    color: var(--color-primary);
+}
+
+.card__link ul li a {
+    display: block;
+    background-color: var(--color-grey);
+    border-radius: 3px;
+    margin-block: 10px;
+    padding: 10px;
+}
+.card__link ul li a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-dark-grey);
+    transition: all 350ms ease-in-out;
+}
